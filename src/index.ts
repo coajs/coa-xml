@@ -1,3 +1,5 @@
-import xml from './xml'
+import { CoaXml } from './CoaXml'
 
-export { xml }
+const xml = new CoaXml()
+
+export { CoaXml, xml }
