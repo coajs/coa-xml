@@ -5,7 +5,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/coa-xml.svg?style=flat-square)](http://npm-stat.com/charts.html?package=coa-xml)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/coajs/coa-xml/pulls)
 
-一个简单的XML和JS对象转换库。基于 [xml2js](https://www.npmjs.com/package/xml2js) 做简单封装
+一个简单的 XML 和 JS 对象转换库。基于 [xml2js](https://www.npmjs.com/package/xml2js) 做简单封装
 
 ## 特点
 
@@ -13,7 +13,7 @@
 
 - 整理并内置了一些默认参数，满足绝大多数使用场景
 - 统一了异步表现形式，全部返回 Promise
-- 内置类型引用，无需额外查看文档，开箱即用，IDE友好
+- 内置类型引用，无需额外查看文档，开箱即用，IDE 友好
 
 ## 快速开始
 
@@ -29,10 +29,10 @@ yarn add coa-xml
 import { xml } from 'coa-xml'
 
 // 将JS对象转换成xml字符串
-await xml.encode({ name: 'A', gender: 1 })  // <xml><name>A</name><gender>1</gender></xml>
+await xml.encode({ name: 'A', gender: 1 }) // <xml><name>A</name><gender>1</gender></xml>
 
 // 将xml字符串转为JS对象
-await xml.encode('<xml><name>A</name><gender>1</gender></xml>')  // { name: 'A', gender: 1 }
+await xml.encode('<xml><name>A</name><gender>1</gender></xml>') // { name: 'A', gender: 1 }
 ```
 
 ### 自定义配置
@@ -60,7 +60,7 @@ const DefaultOptions = {
   explicitArray: false,
   cdata: true,
   headless: true,
-  explicitRoot: false
+  explicitRoot: false,
 }
 ```
 
