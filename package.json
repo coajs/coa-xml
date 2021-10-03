@@ -2,11 +2,7 @@
   "name": "coa-xml",
   "version": "0.0.0",
   "description": "xml component for coa",
-  "keywords": [
-    "coajs",
-    "coa",
-    "xml"
-  ],
+  "keywords": ["coajs", "coa", "xml"],
   "license": "MIT",
   "author": "Aex",
   "homepage": "https://github.com/coajs/coa-xml",
@@ -18,7 +14,7 @@
     "dev": "tsc -w",
     "build": "rm -rf dist && tsc && cp package.json *.md dist",
     "lint": "eslint .",
-    "prettier": "prettier -w .",
+    "format": "prettier -w .",
     "sync": "curl -X PUT 'https://npm.taobao.org/sync/coa-xml?sync_upstream=true'"
   },
   "dependencies": {
