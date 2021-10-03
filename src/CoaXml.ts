@@ -1,7 +1,13 @@
 import { Builder, OptionsV2, Parser } from 'xml2js'
 
 // 默认配置
-const DefaultOptions = { rootName: 'xml', explicitArray: false, cdata: true, headless: true, explicitRoot: false }
+const DefaultOptions = {
+  rootName: 'xml',
+  explicitArray: false,
+  cdata: true,
+  headless: true,
+  explicitRoot: false,
+}
 
 export class CoaXml {
   private readonly options: OptionsV2
