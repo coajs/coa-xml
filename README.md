@@ -32,7 +32,7 @@ import { xml } from 'coa-xml'
 await xml.encode({ name: 'A', gender: 1 }) // <xml><name>A</name><gender>1</gender></xml>
 
 // 将xml字符串转为JS对象
-await xml.encode('<xml><name>A</name><gender>1</gender></xml>') // { name: 'A', gender: 1 }
+await xml.decode('<xml><name>A</name><gender>1</gender></xml>') // { name: 'A', gender: 1 }
 ```
 
 ### 自定义配置
@@ -49,7 +49,7 @@ const xml = new CoaXml({ cdata: false })
 await xml.encode({ name: 'A', gender: 1 }) // <xml><name>A</name><gender>1</gender></xml>
 
 // 将xml字符串转为JS对象
-await xml.encode('<xml><name>A</name><gender>1</gender></xml>') // { name: 'A', gender: 1 }
+await xml.decode('<xml><name>A</name><gender>1</gender></xml>') // { name: 'A', gender: 1 }
 ```
 
 其中，默认配置为
